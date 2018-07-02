@@ -1,0 +1,49 @@
+﻿/*
+Style sheet for index.html senior project: Order Together
+Original coder: Geun Jeon
+*/
+#top
+{
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #989898;
+}
+#header
+{
+	position:fixed;
+	top: 0px;
+	left: 0px;
+	right: 0px;
+	margin-top: 0px;
+}
+#topLi
+{
+	float: left;
+}
+#body
+{
+	margin-top: 100px;
+}
+#footer
+{
+	position: fixed;
+	bottom: 0px;
+	left: 0px;
+	right: 0px;
+	margin-bottom: 0px;
+}
+li a 
+{
+    display: block;
+    color: blue;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover 
+{
+    background-color: #1F98DF;
+}

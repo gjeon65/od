@@ -1,0 +1,61 @@
+﻿<!DOCTYPE html>
+<!--
+Senior Project:
+The name of the project is Order Together.
+This is a web service where multiple users can order food online in a single bundle order.
+-->
+<!-- 
+Original coder: Geun Jeon
+Edit & Date:
+-->
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<!-- content delivery network-->
+    <meta charset="utf-8" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.js"></script>
+	<!--<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jquerymobile/1.4.5/jquery.mobile.min.css"/>-->
+	<!--<link type="text/css" rel="stylesheet" href="css/style.css" />-->
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Order Together</title>
+</head>
+<body>
+	<!-- header section -->
+	
+		
+		<ul>
+			<li > <a href="./index.html"> Home </a> </li>
+			<li > <a href="./login.html"> Sign in </a></li>
+			<li > <a href="./routes/restList.html"> restList </a></li>
+			<li > <a href="blank"> blank </a></li>
+		</ul>
+	
+	<!-- footer -->
+	<div data-role="footer" id="footer">
+	<h1>Footer</h1>
+	</div> 
+	<!-- main body -->
+	<div id="body">
+	<p>Delivery Food
+	</p>
+	<input type="text" placeholder="Type of food or restaurant" id="userInput"/>
+	<button onclick="req()">Find</button>
+	<script>
+		//print function:
+		//prints out message followed by id name
+		function print(msg,spot)
+		{
+			var div =document.getElementById(spot);
+			div.innerHTML = msg;
+		}
+		function req()
+		{
+			var input = document.getElementById("userInput").value;
+		}
+	</script>
+	</div>
+	<div id="output">
+	</div>
+
+</body>
+</html>
